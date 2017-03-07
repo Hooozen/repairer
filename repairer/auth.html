@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+	<link rel="stylesheet" type="text/css" href="../style/common.css"/>
+	<title>安全验证</title>
+	<style type="text/css">
+		.nav{
+			width: 100%;
+			height: 40px;
+			border-bottom: 1px solid #eee;
+			line-height: 40px;
+			text-align: left;
+			margin-bottom: 20px;
+		}
+		.nav-but{
+			float: left;
+		}
+		h2{
+			font-size: 16px;
+			margin: 0;
+			padding: 0;
+			padding-left: 80px;
+		}
+		.return{
+			color: #888;
+			padding-left: 10px;
+		}
+		i{
+			color: #0973aa;
+			padding-right: 4px;
+		}
+		.auth-code{
+			width: 100%;
+			margin: 5px auto;
+			border: 1px solid #eee;
+			box-sizing: border-box;
+		}
+		.content{
+			width: 94%;
+			margin: 0 auto;
+			line-height: 40px;
+		}
+		input{
+			width: 49%;
+			height: 50px;
+			box-sizing: border-box;
+			border-right: 1px solid #eee;
+			padding: 0 10px;
+			font-size: 24px;
+			letter-spacing: 3px;
+			color: #666;
+		}
+		img{
+			width: 49%;
+			height: 50px;
+			vertical-align: bottom;
+			border: none;
+			outline: none;
+		}
+		button{
+			display: block;
+			width: 100%;
+			margin: 0 auto;
+			outline: none;
+			border: none;
+			height: 35px;
+			background: #0973aa;
+			border-radius: 3px;
+			color: #fff;
+			font-size: 18px;	
+		}
+		.changecode{
+			font-size: 14px;
+			color: #0973aa;
+		}
+	</style>
+</head>
+<body>
+	<div class="nav">
+		<div class="nav-but">
+			<a href="" class="return"><i class="fa fa-angle-left"></i>返回</a>
+		</div>
+		<h2>安全验证</h2>
+	</div>
+	<div class="content">
+		请输入验证码进行安全验证：
+		<div class="auth-code">
+			<input type="text"/>
+			<img src="./resource/getverify.php" alt=""/>
+		</div>
+		<a class="changecode" href="">看不清，换一张</a>
+		<button>验证</button>
+	</div>
+</body>
+</html>
