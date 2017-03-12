@@ -8,8 +8,8 @@ $lid=$_GET['lid'];
 $sql="SELECT ldetail,rname,rtel,lstate FROM list,repairer WHERE lid=$lid AND lrid=rid;";
 $res=fetchOne($link,$sql);
 if($res['lstate']!='2'){
-  header("Location:history.php");
-  exit();
+	header("Location:history.php");
+	exit();
 }
 ?>
 <!DOCTYPE html>
@@ -20,8 +20,8 @@ if($res['lstate']!='2'){
   <meta charset="UTF-8">
   <title>assess</title>
 	<style>
-    .assess-content {
-		  margin: 40px 0 0;
+	.assess-content {
+			margin: 40px 0 0;
 			overflow: hidden;
 			width: 100%;
 		}
@@ -33,29 +33,29 @@ if($res['lstate']!='2'){
 			text-indent: 1em;
 			line-height: 30px;
 			overflow: hidden;
-		  width: 100%;
+			 width: 100%;
 		}
 		textarea{
-		  border: none;
+			border: none;
 			border-bottom: 1px solid #eee;
 			display: block;
-		  height: 80px;
+			height: 80px;
 			margin: 0 auto;
 			outline: none;
 			overflow: hidden;
 			padding: 5px;
 			resize: none;
 			width: 96%;
-	  }
+		}
 		.rinfo {
-		  color: #666;
+			color: #666;
 			font-size: 12px;
 			height: 20px;
 			line-height: 30px;
 			padding: 0 10px;
 		}
 		#doAssess{
-		  background: #40afd2;
+			background: #40afd2;
 			border: none;
 			border-radius: 5px;
 			color: #fff;
@@ -68,12 +68,14 @@ if($res['lstate']!='2'){
 	</style>
 </head>
 <body>
-  <div class="header">
-    <div class="back-btn" id="backBtn">
-      <i class="fa fa-angle-left"></i>
-    </div>
+
+	<div class="header">
+		<div class="back-btn" id="backBtn">
+	  <i class="fa fa-angle-left"></i>
+	</div>
 		发表评价
-  </div>
+	 </div>
+
 	<div class="assess-content">
 	  <div class="atitle"><?php echo $res['ldetail'];?></div>
 		<textarea id="aText" maxlength="100" placeholder="发表一下评价吧"></textarea>
@@ -93,24 +95,24 @@ if($res['lstate']!='2'){
 <script>
 window.onload=function(){
 	hiddenNav();
-  $('backBtn').onclick=function(){
-   history.go(-1);
+	$('backBtn').onclick=function(){
+		history.go(-1);
 	}
 	$('doAssess').onclick=function(){
-	  if($('aText').value==''){
-	    noticeDialogFn('未填写评价内容');
-		  return;
-	  }
-	//提交数据
-	  sData="lid="+this.getAttribute('lid')+"&assess="+$('aText').value;
-	  asynSubmit(sData,"./resource/doAssess.php","POST",function(rData){
-		  if(rData.statu==1){
-			  loadingDialogFn(true,'评价成功，跳转中');
+		if($('aText').value==''){
+			noticeDialogFn('未填写评价内容');
+			return;
+		}
+		//提交数据
+		sData="lid="+this.getAttribute('lid')+"&assess="+$('aText').value;
+		asynSubmit(sData,"./resource/doAssess.php","POST",function(rData){
+			if(rData.statu==1){
+				loadingDialogFn(true,'评价成功，跳转中');
 				window.location="history.php";
-		  }else{
-		    noticeDialogFn('服务单状态异常，请刷新页面');
+			}else{
+				noticeDialogFn('服务单状态异常，请刷新页面');
 			}});
-  }
+	}
 }
 </script>
 </html>
