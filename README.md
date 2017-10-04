@@ -3,11 +3,25 @@
 ### 访问地址（手机）
 ![image](https://github.com/hooozen/CHD-angel/blob/master/doc/1507105398.png)
 ### 简介
-#### 用户界面
+#### 用户界面（部分）
 + 主页
+
 ![image](https://github.com/hooozen/CHD-angel/blob/master/doc/shoot/home.jpg) 
 + 预约
+
 ![image](https://github.com/hooozen/CHD-angel/blob/master/doc/shoot/order.jpg)
+
+#### 后台页面（部分）
++ 列表
+
+![image](https://github.com/hooozen/CHD-angel/blob/master/doc/shoot/list.jpg)
++ 详情
+
+![image](https://github.com/hooozen/CHD-angel/blob/master/doc/shoot/detail.jpg)
+
++记录
+
+![image](https://github.com/hooozen/CHD-angel/blob/master/doc/shoot/list.jpg)
 ### 背景
 ##### 起源
 大二时负责任我们学院技术服务部部长，作为“电脑义诊”志愿活动的负责人，当时开发该系统的目的纯粹是为了做好这个志愿活动。（当时也是天真，每天给人免费修电脑，经常占用午休和晚修时间，还嫌来修电脑的人少...)
