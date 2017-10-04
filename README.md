@@ -4,8 +4,12 @@
 ![image](https://github.com/hooozen/CHD-angel/blob/master/doc/1507105398.png)
 ### 简介
 #### 用户界面
-![image](https://github.com/hooozen/CHD-angel/blob/master/doc/shoot/home.jpg)
-![iamge](https://github.com/hooozen/CHD-angle/blob/master/doc/shoot/ordre.jpg)
++ 主页
+
+![Mou icon](https://github.com/hooozen/CHD-angel/blob/master/doc/shoot/home.jpg =400x) 
+
++ 预约
+![Mou icon](https://github.com/hooozen/CHD-angel/blob/master/doc/shoot/order.jpg =400x)
 ### 背景
 ##### 起源
 大二时负责任我们学院技术服务部部长，作为“电脑义诊”志愿活动的负责人，当时开发该系统的目的纯粹是为了做好这个志愿活动。（当时也是天真，每天给人免费修电脑，经常占用午休和晚修时间，还嫌来修电脑的人少...)
