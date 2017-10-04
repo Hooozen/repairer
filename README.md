@@ -19,9 +19,9 @@
 
 ![image](https://github.com/hooozen/CHD-angel/blob/master/doc/shoot/detail.jpg)
 
-+记录
++ 记录
 
-![image](https://github.com/hooozen/CHD-angel/blob/master/doc/shoot/list.jpg)
+![image](https://github.com/hooozen/CHD-angel/blob/master/doc/shoot/rank.jpg)
 ### 背景
 ##### 起源
 大二时负责任我们学院技术服务部部长，作为“电脑义诊”志愿活动的负责人，当时开发该系统的目的纯粹是为了做好这个志愿活动。（当时也是天真，每天给人免费修电脑，经常占用午休和晚修时间，还嫌来修电脑的人少...)
